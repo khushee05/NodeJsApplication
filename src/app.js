@@ -24,15 +24,15 @@ app.use(express.static(direc))
 
 app.get('',(req,res) =>{
 
-    res.render('index',{title: 'Weather', name: 'Khushee Panshul Jain'})
+    res.render('index',{title: 'Weather', name: 'Khushee Jain'})
 })
 
 app.get('/help', (req,res)=>{
-    res.render('help',{helptext: 'Hi baby', title: 'Help', name:'Khushee Panshul Jain'})
+    res.render('help',{helptext: 'This is help page. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est quod veritatis, ratione consequuntur iusto officia officiis dicta dignissimos explicabo exercitationem optio', title: 'Help', name:'Khushee Jain'})
 })
 
 app.get('/about', (req,res)=>{
-    res.render('about',{title: 'About Me', name: 'Khushee Panshul Jain'})
+    res.render('about',{title: 'About Me',desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est quod veritatis, ratione consequuntur iusto officia officiis dicta dignissimos explicabo exercitationem optio", name: 'Khushee Jain'})
     
 })
 
